@@ -1,14 +1,19 @@
 body{
  background-color: #5f6caf; 
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ min-height: 100vh;
 }
 
 .calculator{
   background-color:  #ffb677;
   border-radius: 20px;
-  
+  padding: 30px;
+  border-radius: 10px;
 }
 
 .buttons{
   color: #edf7fa;
-
+  width: 200px;
 }
