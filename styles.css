@@ -13,7 +13,48 @@ body{
   border-radius: 10px;
 }
 
+.screen{
+  width: 215px;
+  background-color: #edf7fa;
+  font-size: 40px;
+  text-align: end;
+  padding: 10px;
+  border-radius: 10px;
+}
+
 .buttons{
+  width: 235px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+button{
   color: #edf7fa;
-  width: 200px;
+  border: none;
+  color: black;
+  border-radius: 8px;
+  margin: 4px;
+  width: 50px;
+  height: 50px;
+  padding: 10px;
+
+  &:hover{
+    background-color: #ff8364
+  };
+
+  &:active{
+    background-color: #ff8364;
+    box-shadow: 0 5px #ffb677;
+    transform: translateY(4px);
+  }
+    
+}
+
+#clear{
+  width: 500px;
+  font-size: 15px;
+}
+
+#equals{
+  width: 108px;
 }
