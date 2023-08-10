@@ -1,5 +1,24 @@
-//on the click the number needs to populate in the screen
+const buttons = document.querySelectorAll('button')
+const screenDisplay = document.querySelector('.screen')
 
-//calculator needs to hold the value put in and perform the operator 
+let calculation = []
+let total
 
-//return the total value 
+function calculate(button){
+  const value = button.textContent 
+  if(value === "CLEAR"){
+    calculation = []
+    screenDisplay.textContent = ''
+  }else if(value === "="){
+    screenDisplay.textContent = eval(total) //eval method takes whole string and returns a completion value
+  }else {
+    calculation.push(value) //collects all the items in the array
+  total = calculation.join('')
+  screenDisplay.textContent = calculation.join('') //shows on screen and removed commas 
+
+  }
+}
+
+buttons.forEach(button => button.addEventListener('click', () => calculate(button)))
+
+
